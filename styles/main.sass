@@ -1,0 +1,132 @@
+@import 'styles/bulma/bulma.sass'
+@import url(https://use.fontawesome.com/6af5da50a4.css)
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700)
+
+$header-font-stack: 'Roboto', sans-serif
+$body-font-stack: 'Open Sans', sans-serif
+$bg-color: #D9D7DC
+
+html
+  height: 100%
+
+body
+  font-family: $body-font-stack
+  height: 100%
+
+header
+  font-family: $header-font-stack
+
+.sticky-navbar
+  position: fixed
+  top: 0
+  width: 100%
+  z-index: 100
+  background-color: rgba(0, 0, 0, 0)
+  text-align: right
+
+  a
+    color: $white
+    text-shadow: 2px 2px 4px #000000;
+
+
+.background-image
+  position: static
+  width: 100%
+  height: 100%
+  background-image: url('../images/bg.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center center
+  background-attachment: fixed
+
+#title
+  position: absolute
+  top: 0
+  width: 100%
+
+  h1, h2, a
+    color: $white
+    text-shadow: 2px 2px 2px #000000;
+
+#aboutMe
+  background-color: $bg-color
+  background: -webkit-linear-gradient($bg-color, $white)
+  background: -o-linear-gradient($bg-color, $white)
+  background: -moz-linear-gradient($bg-color, $white)
+  background: linear-gradient($bg-color, $white)
+
+#projects
+  padding: 0 0.9rem;
+  .columns
+    margin: 0 auto;
+    max-width: 1200px
+
+.card.is-equal-height
+  display: flex
+  flex-direction: column
+  height: 100%
+
+  .framework-images-footer
+    margin-top: auto;
+
+    hr
+      margin-top: 0
+
+.hover-icon
+  opacity: 0.75
+  transition: all .2s
+
+.hover-icon:hover
+  opacity: 1
+  transform: translateY(5px)
+
+.scroll
+  color: $white
+  text-shadow: 2px 2px 2px #000000;
+
+.scroll:hover
+    color: $white
+
+.card-image-container
+  display: flex
+  flex-direction: column
+  justify-content: center
+  max-width: 256px
+  margin: 0 auto
+
+.is-underlined
+  border-bottom: 2px solid rgba(0, 0, 0, 0.7)
+
+.about-me-title
+  margin-bottom: 8px !important
+
+.framework-images
+  text-align: center
+
+  .image
+    position: relative
+    display: inline-block
+    width: 35px
+    height: 35px
+    margin: 0 5px
+    opacity: 0.75
+    transition: all .2s
+    .hover
+      @extend .tag
+      @extend .is-dark
+      position: absolute
+      display: flex
+      left: 50%
+      transform: translateX(-50%)
+      z-index: 1000
+  .image:hover
+    opacity: 1
+    transform: scale(1.1)
+
+
+// Bulma overrides
+.card.is-fullwidth
+  width: 100%
+
+.footer
+  margin-top: 50px

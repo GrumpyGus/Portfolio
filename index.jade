@@ -1,0 +1,187 @@
+nav.sticky-navbar
+  div.container
+    span.icon.is-large
+      a(href="https://github.com/GrumpyGus")
+        i.hover-icon.fa.fa-github-square
+    span.icon.is-large
+      a(href="https://www.linkedin.com/in/mac-merpaw")
+        i.hover-icon.fa.fa-linkedin-square
+
+section.background-image
+
+section.hero.is-fullheight(id="title")
+  header.hero-body
+    div.container.has-text-centered
+      h1.title.is-size-2 Mac Merpaw
+      h2.subtitle.is-size-4.is-marginless Web Developer
+      h2.subtitle.is-size-4 London, ON
+
+      span.icon.is-large
+        a.scroll(href="#aboutMe")
+          i.hover-icon.fa.fa-angle-down
+
+section.hero.is-fullheight(id="aboutMe")
+  div.hero-body
+    div.container.has-text-centered
+      div.card.is-fullwidth
+        div.card-content
+          div.columns
+            div.column.is-one-third.card-image-container
+              figure.image.is-128by128
+                img(src="images/portrait.png", alt="Portrait")
+
+            div.column
+              div.subtitle.is-underlined.about-me-title About Me
+              div.content
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                | eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                | veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+              div.subtitle.is-underlined.about-me-title Languages, Frameworks & Libraries
+
+              div.content.framework-images
+                figure.image
+                  img(src="images/html5.png", alt="HTML5")
+                figure.image
+                  img(src="images/css3.png", alt="CSS3")
+                figure.image
+                  img(src="images/js.png", alt="JavaScript/ES6")
+                figure.image
+                  img(src="images/jquery.png", alt="JQuery")
+                figure.image
+                  img(src="images/react.png", alt="React")
+                figure.image
+                  img(src="images/nodejs.png" alt="Node JS")
+                figure.image
+                  img(src="images/aspnet.png", alt="ASP.NET 4.5/Core")
+                figure.image
+                  img(src="images/ruby.png", alt="Ruby/Ruby on Rails")
+                figure.image
+                  img(src="images/sass.png", alt="Sass")
+                figure.image
+                  img(src="images/mssql.jpg", alt="Microsoft SQL Server")
+                figure.image
+                  img(src="images/mongodb.png", alt="Mongo DB")
+                figure.image
+                  img(src="images/Csharp.png", alt="C#")
+                figure.image
+                  img(src="images/C++.png", alt="C/C++")
+                figure.image
+                  img(src="images/java.png", alt="Java")
+                figure.image
+                  img(src="images/android.png", alt="Android App Development")
+
+      span.icon.is-large
+        a.scroll(href="#projects")
+          i.hover-icon.fa.fa-angle-down
+
+section(id="projects")
+  h1.title Projects
+  hr
+  div.columns
+    div.column
+      div.card.is-fullwidth.is-equal-height
+        header.card-header
+          p.card-header-title React Movie Finder
+        div.card-image
+          figure.image.is-16by9
+            img(src="images/movieFinderProject.png", alt="Movie Finder Project")
+
+        div.card-content
+          div.content
+            |A simple movie finding website created using The Movie DB API.
+            |The website provides information about movies such as ratings,
+            |release date, genres and synopsis. I created this website to practice
+            |consuming an API with NodeJS.
+
+        div.framework-images-footer
+          hr
+          div.content.framework-images
+            figure.image
+              img(src="images/html5.png", alt="HTML5")
+            figure.image
+              img(src="images/css3.png", alt="CSS3")
+            figure.image
+              img(src="images/js.png", alt="JavaScript/ES6")
+            figure.image
+              img(src="images/react.png", alt="React")
+            figure.image
+              img(src="images/nodejs.png" alt="Node JS")
+            figure.image
+              img(src="images/sass.png", alt="Sass")
+          footer.card-footer
+            a.card-footer-item(href='https://grumpygus.github.io/MovieFinder/') View Site
+            a.card-footer-item(href='https://github.com/GrumpyGus/MovieFinder') View Repo
+
+    div.column
+      div.card.is-fullwidth.is-equal-height
+        header.card-header
+          p.card-header-title eStore
+        div.card-image
+          figure.image.is-16by9
+            img(src="images/eStoreProject.png", alt="eStore Project")
+
+        div.card-content
+          div.content
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            | eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            | veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            | consequat.
+
+        div.framework-images-footer
+          hr
+          div.content.framework-images
+            figure.image
+              img(src="images/html5.png", alt="HTML5")
+            figure.image
+              img(src="images/css3.png", alt="CSS3")
+            figure.image
+              img(src="images/js.png", alt="JavaScript/ES6")
+            figure.image
+              img(src="images/jquery.png", alt="JQuery")
+            figure.image
+              img(src="images/Csharp.png", alt="C#")
+            figure.image
+              img(src="images/aspnet.png", alt="ASP.NET Core")
+            figure.image
+              img(src="images/mssql.jpg", alt="Microsoft SQL Server")
+          footer.card-footer
+            a.card-footer-item(href='https://github.com/GrumpyGus/eStoreProject') View Repo
+
+    div.column
+      div.card.is-fullwidth.is-equal-height
+        header.card-header
+          p.card-header-title Project 3
+        div.card-image
+          figure.image.is-16by9
+            img(src="https://bulma.io/images/placeholders/1280x960.png", alt="Portrait")
+
+        div.card-content
+          div.content
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            | eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            | veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            | consequat.
+
+        div.framework-images-footer
+          hr
+          div.content.framework-images
+            figure.image
+              img(src="images/html5.png", alt="HTML5")
+            figure.image
+              img(src="images/css3.png", alt="CSS3")
+            figure.image
+              img(src="images/js.png", alt="JavaScript/ES6")
+          footer.card-footer
+            a.card-footer-item(href='#') View Site
+            a.card-footer-item(href='#') View Repo
+
+
+footer.footer
+  div.container
+    div.content.has-text-centered
+        div
+          |Site Created by Mac Merpaw.
+          |Check out the #[a(href="https://github.com/GrumpyGus/Portfolio") repository]!
+        div
+          |Created using Node.JS, Harp and Bulma
